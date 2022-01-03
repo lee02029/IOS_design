@@ -4,10 +4,11 @@
 1. Overview
 2. App Architecture
 3. User Interaction
+------------
 
-#### 1.Overview
-##### themes
-###### ios Design의 차별성
+### 1.Overview
+#### themes
+##### ios Design의 차별성
 1.Clarity(명확함)
 1-1. 텍스트,아이콘,장식들을 보기 좋게 만들다. 
 1-2. 기능이 명확하게 드러나고 중요한 요소는 강조하자.
@@ -22,4 +23,4 @@
 3-2. 특정한 동작에 의해 컨텐츠가 손실 방지.
 3-3. 보고 있거나 이동하려는 화면의 깊이감을 느끼게 하기.
 
-######
+#####
