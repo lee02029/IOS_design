@@ -1,9 +1,9 @@
 # Human Interface Guidelines 번역본
 
 ### 순서
-1.Overview
-2.App Architecture
-3.User Interaction
+1. Overview
+2. App Architecture
+3. User Interaction
 
 #### 1.Overview
 ##### themes
