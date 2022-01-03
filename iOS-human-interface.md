@@ -100,7 +100,8 @@
   + 필요한 경우에만 오디오 컨트롤에 응답 
   + 오디오 컨트롤을 용도 변경 금지
  
-<img width="586" alt="image" src="https://user-images.githubusercontent.com/80015108/147926353-f555e2f2-1e64-4c93-a78a-e2bfcc6fd5d4.png">
+  ![image](https://user-images.githubusercontent.com/80015108/147926422-62a48dd8-54eb-4eb3-9dc9-c1c63bfc3731.png)
+
 
 
 
