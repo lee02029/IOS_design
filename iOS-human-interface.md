@@ -1,13 +1,13 @@
-#Human Interface Guidelines 번역본
+# Human Interface Guidelines 번역본
 
-###순서
+### 순서
 1.Overview
 2.App Architecture
 3.User Interaction
 
-####1.Overview
-#####themes
-######ios Design의 차별성
+#### 1.Overview
+##### themes
+###### ios Design의 차별성
 1.Clarity(명확함)
 1-1. 텍스트,아이콘,장식들을 보기 좋게 만들다. 
 1-2. 기능이 명확하게 드러나고 중요한 요소는 강조하자.
