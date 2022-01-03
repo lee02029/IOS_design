@@ -75,3 +75,8 @@
   + Settings 앱으로 가는 단축 아이콘을 포함
 
 ### 3. User Interaction
++ 3D Touch
+  + Home Screen Interaction
+  + Peek and Pop
+  + Live Photos
+  + 미리보기 사용
