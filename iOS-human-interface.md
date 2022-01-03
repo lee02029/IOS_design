@@ -134,7 +134,105 @@
   + 가능하다면 Shortcut Gestures를 지원(예:Swipe Back 기능)
   + UIGsetureRecognizer를 활용하여 사용자에게 Multifinger Gestures를 지원하는 것을 추천
   + Standard Gestures
-    + Tap : 선
+    + Tap : 선택, 컨트롤
+    + Drag: 이동(item, 화면 등)
+    + Flick: 스크롤이나 전환을 빠르게 하기
+    + Swipe: 한 손가락 - 이전 화면으로 이동 split view controller에서 뒤에 화면 보이게 하기, 삭제등 액션 버튼 보이기 하기 / 네 손가락(Pad)- 다른 앱으로 전환
+    + Double-tap: Zoom-in, Zoom-out
+    + Pinch: Zoom-in, Zoom-out
+    + Touch and hold: 텍스트(편집을 위한 메뉴),Certain View(item 재조정을 위한 모드로 진입)
+    + Shake: Redo and Undo 
++ Near Field Communication
+  + NFC
+    + 물리적으로 접촉할 필요가 없기 때문에 용어를 잘 선택
+      + "touch", "tap" 대신 "scan", "hold near" 등
+    + "NFC tag"등 전문적인 용어를 사용하지 말고 친근한 언어 사용
+    + 최대한 직관적이고 간단한 언어 사용, 단계가 여러개일 경우 중복되는 문구 제거
++ Undo and redo
+  + 간단하고 정확한 단어로 실행할 것과 취소할 것을 명시
+  + Shake Gestures를 사용할 경우에 다른 action을 중첩시키지 말것.
+  + Redo와 Undo는 분리 시켜서 명확하게 한가지씩 동작하도록 할 것
+
+### System Capability
+
+#### Multitasking
++ OverView
+  + 실행중인 앱에서 다른 앱으로 언제든 빠르게 전환할 수 있게 해주고, 특히 iPad에서 gesture로 전환가능하게 함.
+  + iPad에서 두가지 앱을 한화면에 띄울 수 있는걸 가능하게 한다.
+  <img width="585" alt="image" src="https://user-images.githubusercontent.com/80015108/147928921-a722b5d2-7e7f-471b-8050-9ea667ef35c8.png">
+  
++ Contents
+  + 앱 디자인 철칙& 앱개발시 명심해야할 사향
+    + 멀티태스팅 환경에 맞게 앱을 디자인하기
+    + 앱 사용 중단 -> 현재 상태 저장 -> 중단 상황이 끝남 -> 자연스럽게 동작
+    + a double high status bar 상태를 지원
+    + 앱에서 다른앱으로 이동할때, 사용자가 특별한 활동을 하지 않아도(저장) 그상태를 그대로 유지
+    + 다른앱에서의 audio 소리에 적당히 반응
+    + 앱이 Background상황이 되면 종료상황이라 인식 -> 그에 적절한 조치를 취함
+    + 알림을 적절히 사용
+
+#### Notifications
++OverView
+  + 앱의 알림은 디바이스가 잠겨있어도, 중요한 정보는 어느때나 알림을 만들기
+  + 각각의 알림은 앱 이름, small아이콘, 메세지를 포함
+#### Notifications Behavior
++ Contents
+  + 알림의 동작은 Setting에서 앱 하나하나 정해줄 수 있다.
+  + 알림의 종류
+   + Banner
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
