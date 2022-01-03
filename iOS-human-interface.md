@@ -12,12 +12,10 @@
 1. Clarity(명확함)
 + 텍스트,아이콘,장식들을 보기 좋게 만들다. 
 + 기능이 명확하게 드러나고 중요한 요소는 강조하자.
-
 2. Deference(컨텐츠 존중): 좋은 화면 구성을 통해 사용자들이 컨탠츠들을 이해하기 쉽게 하기.
 + 전체화면 활용
 + 컨텐츠를 부각
 + 베젤, 그라데이션, 그림자등을 최소화 하여 화면이 밝고 가볍게 느끼게 한다.
-
 3. Depth(깊이) 
 + 레이어와 모션을 통해 계층구조를 표현.
 + 특정한 동작에 의해 컨텐츠가 손실 방지.
@@ -63,13 +61,11 @@
   + 앱을 다시 실행 했을때 예전 상태 저장
   + 사용자 리뷰를 너무 자주 요청 금지
   + 재부팅 강요 금지
-  
 + Requesting Permission
   + 확실히 필요할 때만 요구
   + 왜 필요한지 명시
   + 처음 실행할때 요구
   + 불필요하게 정보 수집 금지
-  
 + Settings
   + 어떤 것을 설정변경 할수있는지 언급
   + 우선순위를 정해서 배치
@@ -87,12 +83,10 @@
   + 사용자에게 혼동을 주지 않도록 항목을 구성
   + 작업 버튼을 제공하는 것이 좋음
   + 미리보기 메뉴를 제공 금지 -> Deep press 등 일반적인 사용방식
-  
 + Audio
   + Silence
   + Volume
   + Headphones
-  
 + Designing a Great Audio Experience
   + 필요한 경우 자동으로 조절 가능/ 단,전체 볼륨은 조정 금지
   + 적절한 경우 오디오의 경로 변경을 허용
@@ -122,19 +116,16 @@
   + 같은 Context에서 이동(예: 텍스트 내)과 다른 Context로의 이동(예: Reminder의 목록을 리스트간 이동)
   + 가능하다면 이동 중에 프리뷰를 볼 수 있도록 하자
   + 가능하다면 표현방식의 다양성을 구현
-  
 + Feedback
   + 사용자가 확인할 수 있도록 유용한 피드백 제공(예: 업데이트 진행률, 완료 확인 등)
   + 불필요한 알림은 제공 금지
   + Haptic Feedback을 제공(Animation and Haptics)
-  
 + File Handling
   + 파일을 주기적으로, 키고 끌때, 이동할 때 자동으로 저장
   + 디바이스에 파일을 저장 금지 -> 클라우드 환경에 저장
   + 관리화면을 효과적으로 표현(예:ibook)
   + App을 벗어나지 말고 Preview를 할 수 있도록 하기
   + 필요하다면 다른앱과의 공유기능을 제공(Document Picker Programming Guide 활용)
-  
 + Gestures
   + 게임이 아닐 경우엔 항상 표준 Gestures를 사용해야 혼용X
   + HomeScreen, Control Center, Notification Center등 systemvide screen-edge 재스쳐를 막지 않아야 한다.
@@ -149,14 +140,12 @@
     + Pinch: Zoom-in, Zoom-out
     + Touch and hold: 텍스트(편집을 위한 메뉴),Certain View(item 재조정을 위한 모드로 진입)
     + Shake: Redo and Undo 
-    
 + Near Field Communication
   + NFC
     + 물리적으로 접촉할 필요가 없기 때문에 용어를 잘 선택
       + "touch", "tap" 대신 "scan", "hold near" 등
     + "NFC tag"등 전문적인 용어를 사용하지 말고 친근한 언어 사용
     + 최대한 직관적이고 간단한 언어 사용, 단계가 여러개일 경우 중복되는 문구 제거
-    
 + Undo and redo
   + 간단하고 정확한 단어로 실행할 것과 취소할 것을 명시
   + Shake Gestures를 사용할 경우에 다른 action을 중첩시키지 말것.
@@ -181,7 +170,6 @@
     + 알림을 적절히 사용
 
 #### Notifications
-
 +OverView
   + 앱의 알림은 디바이스가 잠겨있어도, 중요한 정보는 어느때나 알림을 만들기
   + 각각의 알림은 앱 이름, small아이콘, 메세지를 포함
@@ -213,6 +201,9 @@
   + 디테일 뷰에서 알람을 없애는 액션을 신중히 사용 -> 만약 사용한다면 사용자에게 충분히 경고를 알려야한다.
 
 #### Badging
++ Contents
+  <img width="315" alt="image" src="https://user-images.githubusercontent.com/80015108/147931670-dbee68c5-836f-4063-9fff-2109e3fdf34e.png">
+
 
 
 
