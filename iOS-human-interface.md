@@ -202,8 +202,221 @@
 
 #### Badging
 + Contents
-  <img width="315" alt="image" src="https://user-images.githubusercontent.com/80015108/147931670-dbee68c5-836f-4063-9fff-2109e3fdf34e.png">
 
+  <img width="315" alt="image" src="https://user-images.githubusercontent.com/80015108/147931670-dbee68c5-836f-4063-9fff-2109e3fdf34e.png">
+  + 알림을 쌓기위해 Badging을 이용 -> 특정한 정보를 표시 금지
+  + Badging은 오직 알림에만 사용
+  + Badging업데이트에 항상 신경쓰기 -> 사용자는 알림이 확인이 되면 Badging이 업데이트가 되길 바람
+
+#### Printing
++ Overview
+  + Air-print 기술을 사용하여 무선으로 여러 문서를 프린팅 할수 있다.
+  + 만약 Air-Print를 사용하는 앱에서 프린트가 가능할때 유저들은 Navigation bar의 Print버튼이나, toolbar의 Print버튼을 이용
++ Contents
+  + 프린트 시스템 버튼을 누른다면 사용자에게 다음과 같은 모습으로 버튼을 보여 준다.
+
+  <img width="315" alt="image" src="https://user-images.githubusercontent.com/80015108/147932237-3d0d2c61-4dc3-491c-8a44-9c331bbb0ce1.png">
+  + 프린트가 가능할때만 프린트기능을 활성화 -> 가능하지 않으면 표시X
+  + 프린트하면 생각나는 기능들을 제공
+    + 인쇄 범위
+    + 인쇄 장수
+    + 첫장부터 인쇄,뒷장부터 인쇄 등등
+
+#### Quick Look
++ Overview
+  + 미리보기는 다양한 포멧을 지원 -> keynote, Numbers, Pages, and PDF doucuments, images. types of files, 지원하지 않는 파일의 포맷포함
+  + 보통 메일에서 다운로드한 파일을 미리보기에 사용
++ Contents
+  + 현재 보고있는 화면에서 적절하게 뷰를 보여준다
+    + 아이폰의 경우 네비게이션 바가 있다면 화면을 옆으로 밀어서 보여준다. -> 다른 뷰가 켜지는 것처럼
+    + 아이패드에서 네비게이션바가 없다면 model뷰안에 네비게이션 바를 포함
+
+#### Ratings and Reviews
++ Overview
+  + 별점과 평가는 사용자들의 앱 선택에 도움을 준다 -> 긍정적인 별점과 평가는 더욱 사람들의 이목을 끌 수 있다.
+  + 좋은 별점과 평점을 얻기위해 적절한 시점에 사용자에게 피드백을 요구하는게 중요
+  + 나의 앱과 사용자가 입증괸 계약이 되어있을때 별점을 요구 -> 앱을 실행하자마자 요구 금지!
+  + 유저를 방해하는 시점 요구 금지!
+  
+#### System Rating and Review Prompts
++ Contents
+  + 시스템은 거슬리지않는 적절한 시점에 별점과 리뷰를 요청
+  + 최근 별점을 주었다면, 당분간 알람을 띄어선 안됨
+  + 시스템은 자동적으로 365일안에 별점 요청을 3번으로 제한
+  + 되도록이면 시스템이 제공하는 별점창을 사용
+  + 피드백을 위한 다른 버튼을 만들지 않기
+
+#### Screenshots
++OverView
+  + 유저는 현재화면을 캡쳐할 수 있다. ios11부터 화면 하단에 짧게 캡쳐한 화면이 보임
+  + 되도록이면 시스템 스크린샷 인터페이스를 그대로 유지
+
+#### Siri
++ OverView
+  + 개발자의 앱에 Siri를 함께 이식해 음성으로 상호 작용 가능
++ Contents
+  + 음성으로만 동작하게 처리(잠금해제없이 유저들은 시리를 사용하기를 원한다.)
+  + Siri를 가장한 다른 Siri를 만들거나, Siri를 직접 다루지 않는다.(만약 그러면 애플에서 직접적으로 조치가 옴)
+  + 공격적인 내용 금지!!
+  + Siri를 광고에 사용 금지!!
+
+#### Responding to People
++ 최소한의 개입으로, 반응 빠르게
++ 중간과정없이 Siri로 받은 명령은 직접 실행(Siri를 통해 앱을 실행할깨 중간 단계(Screen)없이 연결)
++ 정확한 행동화 믿을 수 있는 반응(Message 보내하고 했는데 전화 금지)
++ Siri를 통한 명령이 금전적인 요구가 있다면 안정하게 그리고 최소한의 금액을 요구하는 옵션을 제공(구매항목이 여러개 있는데 제일 비싼걸 디폴트 금지!!)
+
+#### Designing a Custom Interface
++ 개발자의 앱에 Siri를 커스텀하려면, Siri의 모양을 최대한 살림
++ 인터페이스를 정의할때, 최소한의 여유 간격을 둠
++ 최소한의 높이를 갖는 인터페이스 마련
++ 대화형 인터페이스를 만들기 금지(탭, 제스터로 동일하게)
++ 인터페이스에 앱이름, 아이콘을 포함(자동으로 만들어줌)
+#### Increasing Accuracy
++ 커스텀 단어를 정의해서 사용(Siri가 더많은 액션을 위해 단어를 정의, 단 기본적인 단어는 중복 정의X)
++ 다양한 앱 이름을 정의(UnicornChat -> Unicorn)
++ Siri 사용의 예제를 만들어줌
+#### Tv Providers
++ TV App Intergration: 사용자들에세 장비를 상관하지 않고 좋아하는 영화, TV Show를 보여줄수 있다.
+  + 화면 전환의 부드러운 연속성을 유지 -> TV App이 실행될 때 검은 화면을 먼저 표시 -> 끝날때도 동일
+  + TV App을 실행할때, 내용을 우선해서 먼저 보여줌 -> 중간에 splash화면이나 다른 것들이 오면 좋지 않음
+  + 영상을 시작할땐 사용자에게 재생할것이지 묻지 않기
+  + 올바른 사용자에게 내용이 보여지는지 확실하게 하기 -> 앱이 여러 프로필을 지원하면 TV App은 재생 요청할때 지정 가능
++ Loading Content: 2초이상 로딩이 지연되는 경우 화면 중앙에 Activity spinner을 위치
+  + 가능하면 로딩화면은 피하기
+  + 가능하면 재생을 빠르게 하기 -> 로딩화면이 필요하면, 재생에 필요한 만큼 로딩
+  + 로딩 화면은 검정으로 하기 -> TV App의 하얀 화면과 대비가 잘된다.
+  + 로딩 화면시 컨텐츠는 최소한으로 보여줌
++ Exiting Playback: 유저는 영상을 재생완료 후 TV App으로 이동하는게 아니하 나의 앱으로 남긴다 -> 유저에게 혼동 방지
+  + 상황에 맞는 화면을 보여줌
+    + 컨텐츠를 종료할때, 방금까지 보았던 내용을 표시
+    + 다른 시작하는 버튼도 옵션으로 넣기
+    + 콘텐프가 포함된 메뉴를 보여주거나, 앱의 메뉴를 보여줌
+  + 사용자가 언제든 종료가능 -> 그것을 위한 대비하기
+#### TV Providers
++ Single sign-On: TV Provides가 사용자 계정 인증을 요구 -> 그럴때 사용
+
+<img width="315" alt="image" src="https://user-images.githubusercontent.com/80015108/147936044-7baf28f0-cc8c-4e48-bbab-bd49d66e139c.png">
+  + 유저가 system Level에서 인증을 했다면, 또다시 인증을 요청하지 않기
+  + Privacy controls에서 로그아웃을 하지 않기
+
+### Visual Design
+
+#### Adaptivity and Layout
++ OverView
+  + 사용자들은 다양한 디바이스에서 동일한 앱을 사용하길 원함
+  + ios는 자동으로 화면의 크기에 맞게 모양을 바꿔줌
+
+<img width="525" alt="image" src="https://user-images.githubusercontent.com/80015108/147936530-8dcf3a25-8adb-47fb-9d6e-27b52c664b40.png">
++ Auto Layout
+  + Auto Layout을 이용해 화면상의 규칙을 정할 수 있다.
+  + 자동으로 레이아웃을 Constraints를 통해 줄 수 있다.
+  + Auto layout including
+    + 다른 크기의 스크린과 다른 색상들(sRGB/P3)
+    + 다른 디바이스의 회전화면들(portratit/landscape)
+    + iPad Split view
+    + Multitasking mode(iPad)
+    + Dynamic Type(사이즈 조절)
+    + 국제화적인 특징을 가질 수 있다.(왼쪽 오른쪽 레이아웃 방향, 시간등)
++ Layout Guides and Safe Area
+  + 레이아웃 가이드는 실제 화면에선 보이지않는 정사각형의 레이아웃을 정의
+  + safe 영역과 layout margins(UIKit)을 고수하기
+
+  <img width="398" alt="image" src="https://user-images.githubusercontent.com/80015108/147937042-502094eb-561d-4885-8796-bf7e30f06c19.png">
++ Adaptivity and Layout
+  + Size Classes: 디바이스마다 슽크린 사이즈를 불러오는 클래스
+    + regular
+    + compact
+
+<img width="607" alt="image" src="https://user-images.githubusercontent.com/80015108/147937286-a4477ffe-c14c-4dcf-8973-60b5304ee900.png">
+
+<img width="609" alt="image" src="https://user-images.githubusercontent.com/80015108/147937328-50cedeae-5b9b-4bd4-9a11-98cb6db6c93b.png">
+
+<img width="579" alt="image" src="https://user-images.githubusercontent.com/80015108/147937355-3ce54e15-e25b-422e-9228-018d334307fc.png">
+
+<img width="462" alt="image" src="https://user-images.githubusercontent.com/80015108/147937374-c813ac5c-8469-45b6-b5bf-723b14e63cc4.png">
++ Layout Considerations
+  + Context가 바뀌는동안, 현재의 콘텐츠에 집중할 수 있게한다.
+  + 중요한 내용이면 한가지 화면에 다 담도록 노력
+  + 화면이 바뀔 때 통일
+  + 중요한것을 전달하기위해 시각적인 균형을 잘맞추기
+  + 화면을 가득 채우기
+  + 적절한 빈공간과 주변을 콘텐츠로 채우기
+  + 큰화면의 디바이스에서 읽기좋은 화면 간격을 유지
+  + 충분한 터치가 가능한 버튼, 아이콘을 넣기
+
+  <img width="483" alt="image" src="https://user-images.githubusercontent.com/80015108/147937746-3396fc87-93f7-43df-a089-839c7775acd8.png">
+  + 불필요한 layout 변경은 피하기
+  + 가능하면 가로, 세로 모드를 지원
+  + 만약 필요하면 하나의 모드를 지원
+  + 앱의 내용에 따라 화면 전환을 커스텀하기
+  + 폰트크기에 변화에 대응할 준비하기
+
+#### Animation
++ IOS는 미묘한 애니메이션을 이용해서 GOOD
++ 적절한 사용은 유저들의 행동에 도움을 준다
++ 현명하게 애니메이션 효과를 사용
++ 현실성있게, 신뢰성있게 되려고 노력(사람들은 생각한대로 안움직이면 혼란스러워함)
++ 일관된 애니메이션을 사용
++ 애니메이션을 만드는것을 선택적으로 한다.
+
+#### Branding
++ OverView
+  + 훌륭한 앱은 독특한 브랜드의 특성을 가지고있다.(폰트,색상,이미지)
+  + 정교하고 깔끔한 브랜딩을 만들기
+  + 브랜딩이 앱디자인을 방해 금지(브랜딩보다 ios앱 답게 만드는게 중요)
+  + 만든 앱의 모든곳에 나의 로고를 넣고싶은 유혹을 뿌리치기
+  + 애플 가이드라인을 고수하기
+
+#### Color
++ Overview
+  + 색상은 유저와의 상호작용에 큰 도움이 된다
+  + App tint 색상을 고를 때는 색상 설계 가이드를 보고 선택하기
+  
+    <img width="496" alt="image" src="https://user-images.githubusercontent.com/80015108/147938809-4023e7b2-7e9f-457b-8ebb-2055e10c4a33.png">
+  + 의사소통을 위해 색상을 신중히 사용(경고의 경우 빨간색)
+  + 상호보완적인 색을 앱에 사용
+  + 앱로고와 일백상통하는 색상을 사용. 브랜딩에 도움
+  + 하나의 대표 색상을 정해서 앱에 적용
+  + 활성화, 배활성화 색상은 같은 색을 사용 금지
+  + artwork와 반투명사이의 색상을 고려
+
+    <img width="426" alt="image" src="https://user-images.githubusercontent.com/80015108/147939051-fbfbb90a-1a9b-4d36-af00-6fde61d7a98b.png">
+  + 다양한 환경에서 색상을 테스트(실내,실외에 따라 다르게 보일수 있다.)
+  + True Tone 효과(자동밝기조절)가 색상에 영향을 미치는걸 고려
+  + 색맹에 대해 알고 있어야한다.
+  + 문화권, 나라마다 다른 색상에 대한 의미를 고려
+  + 충분한 색상 대비 비율을 사용(4.5:1)
+  + 5%가 사람들에게 주제 색상을 인식 시켜준다.
+  + 마법의 비율 70:25:5
+  
+    <img width="441" alt="image" src="https://user-images.githubusercontent.com/80015108/147939557-2332c4b9-f379-4784-9c11-e6a0b1562c45.png">
+
+    <img width="345" alt="image" src="https://user-images.githubusercontent.com/80015108/147939612-0b87e7be-f695-4e05-a8f1-71cfe20d8e7b.png">
+    
+#### Color Management
++ ios standard RGB(sRGB)에 맞는 이미지를 사용
++ 호환 가능한 색상을 최대한 사용(Display P3) 픽셀당 16비트 P3프로파일 .png
+
+  <img width="281" alt="image" src="https://user-images.githubusercontent.com/80015108/147939858-d6c0796e-fcfa-4bd8-921f-837e67c7008b.png">
++ iphone 7 최초의 DCI-P3 color space 사용제품
+
+   <img width="431" alt="image" src="https://user-images.githubusercontent.com/80015108/147939949-bb8c2a12-3d17-4a74-a865-112c16a40342.png">
+
+#### Terminology
++ OverView
+  + 유저화의 소통을 위해 소통법이 편안함을 주는지 알아본다
++ Contents
+  + 친숙하고 이해하기 쉬운 용어와 문장을 사용(일반적으로 모든사람이 사용하는 앱에는 기술적인 용어는 필요X)
+  + 인터페이스 텍스트를 간결하고 명확하게 보여준다.(사람들은 읽는것을 강요받는걸 싫어한다.)
+  + 사람과 대화하는 느낌의 Label문장과 Button을 만든다.(요소를 한눈에 알아야 한다.)
+  + 공손한 말투 사용
+  + 비공식적이고, 친숙한 언어를 사용하게 노력
+  + 유머를 사용할때는 조심해서 사용(다른 문화권에서는 안 통할수 있기 때문)
+  + 관련성있고 일관된 이미지와 텍스트를 사용(iPad사용자가 iPhone 정보나 이미지를 보여주지 말기)
+  + 날짜를 정확하게 사용
+    + 앱을 사용하는 사람의 시간대에 맞추어서 날짜정보를 보여주어야한다.
+    + 비행일정표를 보여주는 앱, 비행의 출발과 도착 시간을 명시적으로 표현
 
 
 
