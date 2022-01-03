@@ -38,16 +38,15 @@
 
 ### 2. App Architecture
 
-2-1. Accessibilty
-+ Reduce transparency
-+ VoiceOver
-+ Button Shapes
-2-2. Loading
-2-3. Modality
-https://image.slidesharecdn.com/ios-hig-pdf-180108093838/95/ios-human-interface-guidelines-18-638.jpg?cb=1515404413![image](https://user-images.githubusercontent.com/80015108/147923620-7b5550ae-4fd0-4b29-a475-1959f67ee8c2.png)
-2-4. Navigation
-2-5. Onboarding
-2-6. Requesting Permission
-2-7. Settings
++ Accessibilty
+  + Reduce transparency
+  + VoiceOver
+  + Button Shapes
++ Loading
++ Modality
++ Navigation
++ Onboarding
++ Requesting Permission
++ Settings
 
 
