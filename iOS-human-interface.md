@@ -43,7 +43,8 @@
   + VoiceOver
   + Button Shapes
 + Loading
-![image](https://user-images.githubusercontent.com/80015108/147924032-840c9281-7593-4dd2-b537-00f822287a2f.png)
+
+  ![image](https://user-images.githubusercontent.com/80015108/147924032-840c9281-7593-4dd2-b537-00f822287a2f.png)
 + Modality
 + Navigation
 + Onboarding
