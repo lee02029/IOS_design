@@ -99,11 +99,42 @@
   + 앱이 임시 오디오 재생을 마칠 때 다른 앱에 알림
   + 필요한 경우에만 오디오 컨트롤에 응답 
   + 오디오 컨트롤을 용도 변경 금지
+
  
   <img width="586" alt="스크린샷 2022-01-03 오후 8 37 53" src="https://user-images.githubusercontent.com/80015108/147926509-182231b4-5b3a-49be-9dd8-a260992e9644.png">
+  
+  
++ Authentication
+  + 최대한 늦게 표시
+  + 어떤 권한을 필요하는지 설명
+  + 최소 입력으로 해결
+  + Passcode 라는 용어 사용 금지
+  + 가능하면 Biometiric Authentication를 지원
 
+![image](https://user-images.githubusercontent.com/80015108/147926776-2542d065-4027-41b9-b47d-f8c1d7cdcfbc.png)
 
-
++ Drag and Drop
+  + Drag 동작시 목적지가 될 수 있는 것과 아닌것을 구분해서 보여주자(Drag and Drop in UIKit)
+  + 같은 Context에서 이동(예: 텍스트 내)과 다른 Context로의 이동(예: Reminder의 목록을 리스트간 이동)
+  + 가능하다면 이동 중에 프리뷰를 볼 수 있도록 하자
+  + 가능하다면 표현방식의 다양성을 
++ Feedback
+  + 사용자가 확인할 수 있도록 유용한 피드백 제공(예: 업데이트 진행률, 완료 확인 등)
+  + 불필요한 알림은 제공 금지
+  + Haptic Feedback을 제공(Animation and Haptics)
++ File Handling
+  + 파일을 주기적으로, 키고 끌때, 이동할 때 자동으로 저장
+  + 디바이스에 파일을 저장 금지 -> 클라우드 환경에 저장
+  + 관리화면을 효과적으로 표현(예:ibook)
+  + App을 벗어나지 말고 Preview를 할 수 있도록 하기
+  + 필요하다면 다른앱과의 공유기능을 제공(Document Picker Programming Guide 활용)
++ Gestures
+  + 게임이 아닐 경우엔 항상 표준 Gestures를 사용해야 혼용X
+  + HomeScreen, Control Center, Notification Center등 systemvide screen-edge 재스쳐를 막지 않아야 한다.
+  + 가능하다면 Shortcut Gestures를 지원(예:Swipe Back 기능)
+  + UIGsetureRecognizer를 활용하여 사용자에게 Multifinger Gestures를 지원하는 것을 추천
+  + Standard Gestures
+    + Tap : 선
 
 
 
