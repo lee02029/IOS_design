@@ -406,6 +406,8 @@
 #### Terminology
 + OverView
   + 유저화의 소통을 위해 소통법이 편안함을 주는지 알아본다
+  + San Francisno(SF)는 IOS의 기본 폰트!!
+  + 한글 서체인 애플SD 고딕 네오와의 조합도 굿
 + Contents
   + 친숙하고 이해하기 쉬운 용어와 문장을 사용(일반적으로 모든사람이 사용하는 앱에는 기술적인 용어는 필요X)
   + 인터페이스 텍스트를 간결하고 명확하게 보여준다.(사람들은 읽는것을 강요받는걸 싫어한다.)
@@ -417,8 +419,15 @@
   + 날짜를 정확하게 사용
     + 앱을 사용하는 사람의 시간대에 맞추어서 날짜정보를 보여주어야한다.
     + 비행일정표를 보여주는 앱, 비행의 출발과 도착 시간을 명시적으로 표현
-
-
+  + 중요한 내용으 강조
+  + 가능하 한가지 서체를 사용
+  + 가능하면 기본으로 제공하는 text style을 사용
+  + Custom fonts가 잘보이는지 확인
+  + Custom fonts가 사용자 지정 크기변화에도 적용이 잘되어야함
++ Typography
+  + SF느 유동적인 크기변화에도 잘 작동됨
+  + xSmall,Samll,Medium,Large,xLarge,xxLarge,xxxLarge
+  + Larger Accessibility Type Sizes -> 추가적으로 더큰 
 
 
 
