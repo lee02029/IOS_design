@@ -427,22 +427,134 @@
 + Typography
   + SF느 유동적인 크기변화에도 잘 작동됨
   + xSmall,Samll,Medium,Large,xLarge,xxLarge,xxxLarge
-  + Larger Accessibility Type Sizes -> 추가적으로 더큰 
+  + Larger Accessibility Type Sizes -> 추가적으로 더 큰 사이즈의 타입을 지원
++ Font Usage and Tracking
+  + 인터페이스의 실물 크기로 올바른 글꼴을 사용
+    + Button, Label, 표준 컨트롤러 라이브러리는 사용자 설정으로 자동으로 폰트가 변경됨
+
+#### Icons and Images
++ OverView
+  + ios는 이미지를 배피할떄 사용하는 기본 좌표는 Point Display에서는 Pixel이다.
+  + Standard-Resolution screen에선 Point == Pixel
+  + 고생도에서는 Pixel의 수가 더 많아진다. Point != Pixel
++ Contents
+  + 앱이 지원하는 모든 장피에 대해 고해상도 이미지가 있어야한다.
+    + 표준 해상도 이미지의 비율 -> 1.0, @1x -> 10px * 10px
+    + 2.0 -> @2x -> 20px * 20px
+    + 3.0 -> @3x -> 30px * 30px
++ Designing High-Resolution Artwork
+  + 8px-by-8px grid를 사용
+    + 깔끔하고 날카롭게하는 다듬기 작업이 수월
+    + 이미지 경계를 그리드로 맞추면, 이미지 축소시 발생하는 이미지 손실을 최소한으로 막을수있다.
+  + 적절한 포맷 이미지 사용 권장
+    + 무손실이미지
+    + 사진 -> JPEG 사용 , 사이즈를 줄여주지만, Artwork보다 손실된 이미지를 구분하기가 어려움
+  + 24-bit가 다 필요없다면, 8-bit color palette를 사용
++ Designing High-Resolution Artwork
+  + JPEG를 사용하면 사이즈와 quality의 균형 맞추기
+  + 이미지 및 아이콘에 대한 텍스트 정보를 제공 -> VoicOver
+
+#### App Icon
++ Overview
+  + 모든 앱은 앱스토어나 홈화면에서 이목을 끌고, 기억에 남는 아름다운 아이콘을 가짐
+  + 아이콘은 앱의 목적과 어떤 앱인지 짧게 보여줄 기회
+  + 아이콘은 시스템 전반에서 어디든지 보여줌
++ Contents
+  + 단순하게!
+  + 한가지 포인트 정하기
+  + 알아보기 쉬운 디자인 하기
+  + 배경은 단순, 투명은 X
+  + 로고일 경우에만 단어 사용
+  + 사진, 스크린샷, 인터페이스 요소는 X
+  + 애플껀 사용 X
+  + 인터페이스에 사용된걸 사용 X
+  + 여러 배경에서 테스트
+  + 아이콘의 모서리는 정사각형으로 유지
+
++ App Icon Attributes
+  <img width="550" alt="스크린샷 2022-02-17 오후 3 12 13" src="https://user-images.githubusercontent.com/80015108/154416280-e435e343-5edc-41d9-8511-c74f32020807.png">
++ App Icon Sizes
+  + 모든 앱은 반드시 Small아이콘이 있어야합니다. 큰아이콘은 App Store에서 사용
+  + 다양한 디바이스에서 아이콘이 멋지게 보이는지 확인
+  + 작은 아이콘을 앱스토어에 사용X -> 앱스토엔 좀더 상세한 묘사를 할 수 있다.
++ Spotlight, Setting, and Notification Icons
+  + 모든 앱은 반드시 Small 아이콘이 있야합니다. 검색할떄, 세팅에서, 알림에서 쓰인다.
+  + 세팅아이콘에 중첩이나 테두리를 사용X
+
+#### Custon Icons
++ Overview
+  + 우리가 만든 앱이 시스템 아이콘으로 다 표현할 수 없다면, 새롭게 만들 수 있다.
++ Contents
+  + 알아보기 쉽게, 간단히 디자인하기
+  + Glyph처럼 아이콘은 디자인하기
+  + Glyphs는 @2X와 PHD로 저장
+  + 아이콘에 일관성을 유지하기
+  + 읽기 쉬운 아이콘이어야함
+  + 아이콘이 선택되었을떄와 그렇지 않을때를 color로 나뉘어 사용
+  + 아이콘에 텍스트를 사용X
+  + 애플기본 아이콘을 사용X
+  + 아이콘과 마찬가지로 VoiceOver 기능에 대응하기
++ Cutom Ico Sices
+  + 아이콘은 동일한 사이즈를 가짐
+  
+  <img width="424" alt="스크린샷 2022-02-17 오후 3 25 32" src="https://user-images.githubusercontent.com/80015108/154418001-c9042c36-a34f-4141-9105-00a97778cea8.png">
+
++ Tab Bar Icon Size
+  + Portrait 방향일때, Landscape 방향일때 아이콘의 크기를 정하기
+  + Regular tab bar 일때와 Compact tab ber
+  
+  <img width="489" alt="스크린샷 2022-02-17 오후 3 26 17" src="https://user-images.githubusercontent.com/80015108/154418071-57ce43f5-c6af-4700-be62-5183c9245179.png">
+  
+#### Launch Screen
++ Overview
+  + 앱이 실행되기 전의 화면 -> 실행되면 빠르게 실행화면으로 전환 -> 예술적으로 보여줄 기회X
+  + 모든 앱은 Launch Screen이 있다.
+  + Launch Screen은 디바이스마다 다르기 때문에, Xcode에서 storyboard를 사용하기를 권장
++ Contents
+  + 앱의 첫번쨰 화면이디 깨문에 정체성을 보여 줄수 있는 화면으로 만들기
+  + 텍스트를 피하기 -> 정해진 화면이기 때문에 국제화를 대응할수 없다.
+  + 사용자들이 앱을 자주 바꿔서 실행하기 때문에, 이목을 쓰는 launch Screen 사용 X
+  + 광고에 사용X
+  
+#### System Icons
++ Overview
+  + IOS에서 제공해주는 아이콘을 사용 -> 사람들에게 친숙함을 느끼게함
+    + Navigation Bar and Toolbar Icons
+    + Tab Bar Icons
+    + Home Screen Quick Action Icons
+  + 의도에 맞는 아이콘을 사용
+  + 아이콘에 대체 text-Label을 제공
+  + 필요하면 커스텀아이콘을 사용
+
+  <img width="509" alt="스크린샷 2022-02-17 오후 3 34 52" src="https://user-images.githubusercontent.com/80015108/154419178-916fdfd6-822d-4596-a5e0-961f60d35ba9.png">
 
 
+### Bars(UI Elements)
++ Navigation Bars
 
+<img width="625" alt="스크린샷 2022-02-17 오후 3 45 31" src="https://user-images.githubusercontent.com/80015108/154420598-4d4beb2d-f7a7-442e-82a4-83374ee3204c.png">
 
+<img width="619" alt="스크린샷 2022-02-17 오후 3 45 37" src="https://user-images.githubusercontent.com/80015108/154420631-6b6ec29f-b9ad-4a3c-9b84-aaa5041eb94b.png">
 
++ Tab Bars
 
+<img width="623" alt="스크린샷 2022-02-17 오후 3 45 49" src="https://user-images.githubusercontent.com/80015108/154420672-8e5050e7-4f52-468e-99ee-78ccbcfeaa8d.png">
 
+<img width="622" alt="스크린샷 2022-02-17 오후 3 45 56" src="https://user-images.githubusercontent.com/80015108/154420738-3715f300-577e-4e9c-8d8f-796d3b22a7f1.png">
 
++ Tool Bars
 
+<img width="619" alt="스크린샷 2022-02-17 오후 3 46 02" src="https://user-images.githubusercontent.com/80015108/154420871-da4be4c0-f652-4a5c-8a01-1cf36841d198.png">
 
++ Search Bars
 
+<img width="610" alt="스크린샷 2022-02-17 오후 3 46 08" src="https://user-images.githubusercontent.com/80015108/154420940-b2004e28-c471-4e01-8dd5-7ba3e8e63d5c.png">
 
++ Status Bars
 
+<img width="544" alt="스크린샷 2022-02-17 오후 3 46 15" src="https://user-images.githubusercontent.com/80015108/154421110-45dd1f95-fcab-4893-84ba-51f090a60e9a.png">
 
-
+### Views(UI Elements)
 
 
 
